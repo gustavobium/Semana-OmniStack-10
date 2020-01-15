@@ -8,6 +8,8 @@ const SearchController = require('./controllers/SearchController');
 // Route Params: acessados atráves de request.params (identificar um recurso na alteracao ou remocao)
 // Body : acessados atráves de request.body (dados para criacao ao alteracao de registros)
 
+routes.put('/devs', DevController.update);
+routes.delete('/devs', DevController.destroy);
 routes.get('/devs', DevController.index);
 routes.post('/devs', DevController.store);
 
