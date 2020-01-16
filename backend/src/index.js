@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const routes = require('./routes');
+const cors = require('cors');
 const helmet = require('helmet');
 
 const app = express();
@@ -9,6 +10,7 @@ const app = express();
 //  ler https://expressjs.com/pt-br/advanced/best-practice-security.html
 app.use(helmet());
 app.disable('X-Powered-By');
+app.use(cors());
 
 mongoose.connect('mongodb+srv://gdonadon:gu@1993@cluster0-tezm2.gcp.mongodb.net/week10?retryWrites=true&w=majority', {
     useNewUrlParser: true,

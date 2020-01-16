@@ -1,0 +1,45 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js dev
+
+PATH: 
+  C:\Python27\;C:\Python27\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-12.0.2\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Gustavo Bium Donadon\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Gustavo Bium Donadon\AppData\Local\Programs\Python\Python37\;C:\Users\Gustavo Bium Donadon\AppData\Local\Microsoft\WindowsApps;C:\Users\Gustavo Bium Donadon\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Gustavo Bium Donadon\flutter\bin;C:\Program Files\Java\jdk-12.0.2\bin;C:\Users\Gustavo Bium Donadon\AppData\Local\GitHubDesktop\bin;C:\Users\Gustavo Bium Donadon\AppData\Roaming\npm;C:\Users\Gustavo Bium Donadon\AppData\Roaming\Composer\vendor\bin;C:\Users\Gustavo Bium Donadon\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  12.13.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\Gustavo Bium Donadon\Documents\GitHub\Semana-OmniStack-10\package.json: Unexpected token } in JSON at position 74
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:310:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "backend",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+      "dev": "nodemon src/index.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
